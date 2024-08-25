@@ -64,26 +64,26 @@ const Navbar = () => {
             </section>
             {/* bottom side */}
             <section className=" flex items-center justify-between  border-b-2 border-orange-500 bg-white ">
-                <div className="flex items-center gap-10 p-5 ">
-                    <img className=" w-32" src={logo} alt="navbar-logo" />
+                <div className="flex items-center gap-14 px-5 py-5 lg:py-0 ">
+                    <img className=" w-36" src={logo} alt="navbar-logo" />
                     <ul className=" hidden lg:flex gap-7 items-center">
                         {
                             menuItem.map((menu, index) => <li className={`${menu.path === "/signUp" || menu.path === "/login" ? "hidden" : ""}`} key={index}><NavLink to={menu.path} className={({ isActive }) => isActive ? "border-b-2 border-orange-500 text-orange-500 text-lg " : "hover:text-orange-500 text-lg pb-0 hover:border-b-2 hover:border-orange-500 "}>{menu.route}</NavLink></li>)
                         }
                     </ul>
                 </div>
-                <div className=" flex items-center">
-                    <div className=" hidden lg:flex items-center gap-5 p-5 ">
+                <div className=" flex items-center space-x-3">
+                    <div className=" hidden lg:flex items-center gap-5  ">
                         <p className=" p-4 rounded-full text-orange-500 shadow-lg text-xl"><FiPhoneCall /></p>
                         <div>
                             <p>Call Anytime</p>
                             <p className=" text-lg font-semibold">880-1857-318520</p>
                         </div>
                     </div>
-                    <div className=" hidden lg:block  p-10 bg-orange-500 text-white font-semibold text-lg hover:bg-blue-950">
+                    <div className=" hidden lg:block  p-7 bg-orange-500 text-white font-semibold text-lg hover:bg-blue-950">
                         <p>Find A Car</p>
                     </div>
-                    <div className=" block lg:hidden  p-5">
+                    <div className=" block lg:hidden p-5 ">
                         <p onClick={() => setToggel(true)} className=" text-3xl text-orange-500"><AiOutlineMenu /></p>
                     </div>
                 </div>
