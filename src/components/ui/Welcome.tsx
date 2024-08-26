@@ -1,8 +1,8 @@
 import Container from "./Container";
 import Hadding from "./Hadding";
-import img from "../../img/download (20).jfif"
-import img2 from "../../img/download (4).png"
-import img3 from "../../img/download (5).png"
+import img from "../../img/download (7).png"
+import img2 from "../../img/download (6).png"
+import img3 from "../../img/download (8).png"
 import carImage from "../../img/car-min.png"
 
 const Welcome = () => {
